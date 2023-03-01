@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: initial;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    border: 0;
+    background: #F0F0F0;
+}
+
+input:focus{
+   outline: 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    align-items: unset;
+    font: inherit;
+    font-variant-caps: unset;
+    font-style: normal;
+    font-weight: normal;
+    font-variant-ligatures: unset;
+    font-variant-numeric: unset;
+    font-variant-east-asian: unset;
+    font-stretch: unset;
+    letter-spacing: unset;
+    word-spacing: unset;
+    line-height: 1;
+    text-shadow: none;
+    writing-mode: unset;
+    text-rendering: unset;
+    text-indent: 0;
+    color: inherit;
+    text-decoration: none;
+    text-transform: none;
+    background-color: unset;
+    padding: 0;
+    border: 1px solid;
+    border-radius: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    appearance: none;
+    cursor: pointer;
+  }
+
+.gradient{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(255, 81, 47) 35%, rgb(221, 36, 118) 100%);
+    animation: i 10s linear infinite;
+    background-size: 200% 500%;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 465px;
+    padding: 26px 32px 62px;
+    margin: auto;
+    background: #fff;
+}
+
+.head__h1{
+    position: relative;
+    padding-left: 35px;
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    color: #1B1C1D;
+    margin-bottom: 10px;
+    vertical-align: baseline;
+}
+
+.head__h1::before {
+    content: "";
+    position: absolute;
+    background: url('../img/key.svg') no-repeat;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 27px;
+    vertical-align: baseline;
+
+}
+
+.head__p{
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    line-height: 20px;
+    color: #7A7B7F;
+    margin-bottom: 36.5px;
+}
+
+.head__link{
+    color: #EA355A;
+}
+
+.form{
+    
+}
+
+.form__label-nl{
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+    margin-bottom: 14px;
+}
+
+.input{
+    width: 50%;
+    padding: 12px 14px;
+}
+
+.form-label-email{
+    display: flex;
+    margin-bottom: 11px;
+}
+
+.form__st{
+    width: 100%;
+    padding: 12px 14px;
+}
+
+.form__btn{
+    display: block;
+    width: 100%;
+    background: #EA355A;
+    box-shadow: 0px 3px 0px #BD1962;
+    padding: 17px 166px;
+    border: 0;
+}
+
+.form__link{
+    width: 140px;
+    display: block;
+    font-family: 'Ubuntu';
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+.form__btn:hover{
+    background: #ea3540;
+}
+
+@keyframes i {
+    0% {
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
